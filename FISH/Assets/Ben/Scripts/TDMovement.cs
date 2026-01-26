@@ -3,18 +3,25 @@ using UnityEngine.InputSystem;
 
 public class TDMovement : MonoBehaviour
 {
-    public float walkSpeed = 5f;
+    [SerializeField]
+    private float speed;
 
     private Rigidbody2D rb2d;
+    private Vector2 _movementInput;
 
-    void Awake()
+    private void Awake()
     {
         rb2d = GetComponent<Rigidbody2D>();
     }
 
-    public void Move(InputAction.CallbackContext ctx)
+    private void FixedUpdate()
     {
-        rb2d.linearVelocity = ctx.ReadValue<Vector2>() * walkSpeed;
+        rb2d.linearVelocity = _movementInput * speed;
+    }
+
+    private void OnMove(InputValue inputValue)
+    {
+        _movementInput = inputValue.Get<Vector2>();
     }
 }
 
