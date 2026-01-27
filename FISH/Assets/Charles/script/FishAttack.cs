@@ -3,7 +3,7 @@ using UnityEngine.InputSystem;
 
 public class FishAttack : MonoBehaviour
 {
-    public float attackRange = 1.0f;
+    public float attackRange = 2.0f;
     public Rigidbody2D rb2d;
     public void Attack()
     {
@@ -33,5 +33,6 @@ public class FishAttack : MonoBehaviour
             }
         }
         Gizmos.DrawWireSphere(rb2d.position + new Vector2(transform.localScale.x * attackRange, 0), 0.1f);
+    
     }
 }
