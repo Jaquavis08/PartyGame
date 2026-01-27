@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: 4e0272f42e745f346b4e1e21a2225ede
+guid: 8856a966c630053458a83f00c6cbd7bd
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3563580370961792669
-    second: blazenek-scaled_0
+      213: -560916075140790042
+    second: tiger barb hurt_0
+  - first:
+      213: -2137396569474328886
+    second: tiger barb hurt_1
+  - first:
+      213: 1550948267812653274
+    second: tiger barb hurt_2
+  - first:
+      213: 4412614596658405875
+    second: tiger barb hurt_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +46,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -51,7 +60,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -75,7 +84,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -126,13 +135,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: blazenek-scaled_0
+      name: tiger barb hurt_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 2560
-        height: 1707
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +150,96 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3618444888e9b8ec0800000000000000
-      internalID: -3563580370961792669
+      spriteID: 6e84d603dc93738f0800000000000000
+      internalID: -560916075140790042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiger barb hurt_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac6185cf4217652e0800000000000000
+      internalID: -2137396569474328886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiger barb hurt_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad80bf77b33168510800000000000000
+      internalID: 1550948267812653274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiger barb hurt_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f1278cb891cc3d30800000000000000
+      internalID: 4412614596658405875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiger barb hurt_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b39e963600a874a4182c01527a427f6f
+      internalID: 1788915821
       vertices: []
       indices: 
       edges: []
@@ -151,7 +248,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 64527b437339b0842b9f24209e8059ee
     internalID: 0
     vertices: []
     indices: 
@@ -161,7 +258,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      blazenek-scaled_0: -3563580370961792669
+      tiger barb hurt_0: -560916075140790042
+      tiger barb hurt_1: -2137396569474328886
+      tiger barb hurt_2: 1550948267812653274
+      tiger barb hurt_3: 4412614596658405875
+      tiger barb hurt_4: 1788915821
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
