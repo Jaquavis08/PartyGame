@@ -10,6 +10,8 @@ public class TDMovement : MonoBehaviour
     private Vector2 _movementInput;
     private Vector2 smoothedMovementInput;
     private Vector2 movementInputSmoothVelocity;
+    public GameObject parent;
+
 
     private int facingDirection = 1;
 
@@ -40,7 +42,16 @@ public class TDMovement : MonoBehaviour
             facingDirection = -1;
         }
        
-      transform.localScale = new Vector3(1, facingDirection, 1);
+     
+
+        if (facingDirection == 1)
+        {
+            parent.transform.GetChild(0).gameObject.GetComponent<RectTransform>().localScale = new Vector3(1, 1, 1);
+        }
+        else if (facingDirection == -1)
+        {
+            parent.transform.GetChild(0).gameObject.GetComponent<RectTransform>().localScale = new Vector3(1, -1, 1);
+        }
     }
 
     private void OnMove(InputValue inputValue)
