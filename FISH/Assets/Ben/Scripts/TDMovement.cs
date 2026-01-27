@@ -5,7 +5,8 @@ public class TDMovement : MonoBehaviour
 {
     [SerializeField]
     private float speed;
-
+    private GameObject player;
+    private Vector3 playerY;
     private Rigidbody2D rb2d;
     private Vector2 _movementInput;
     private Vector2 smoothedMovementInput;
@@ -22,7 +23,7 @@ public class TDMovement : MonoBehaviour
 
     private void Update()
     {
-               Flip();
+        Flip();
     }
 
     private void FixedUpdate()
@@ -41,9 +42,7 @@ public class TDMovement : MonoBehaviour
         {
             facingDirection = -1;
         }
-       
-     
-
+      
         if (facingDirection == 1)
         {
             parent.transform.GetChild(0).gameObject.GetComponent<RectTransform>().localScale = new Vector3(1, 1, 1);
