@@ -264,6 +264,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1004969041298869899, guid: 535667ccf188a0b409b5fe3003cc8e49, type: 3}
+      propertyPath: m_NotificationBehavior
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1004969041298869899, guid: 535667ccf188a0b409b5fe3003cc8e49, type: 3}
+      propertyPath: m_ActionEvents.Array.data[2].m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1004969041298869899, guid: 535667ccf188a0b409b5fe3003cc8e49, type: 3}
+      propertyPath: m_ActionEvents.Array.data[2].m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1004969041298869899, guid: 535667ccf188a0b409b5fe3003cc8e49, type: 3}
+      propertyPath: m_ActionEvents.Array.data[2].m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 11500000, guid: ee87e77cfc94c0d4faff86ee86a13181, type: 3}
+    - target: {fileID: 1004969041298869899, guid: 535667ccf188a0b409b5fe3003cc8e49, type: 3}
+      propertyPath: m_ActionEvents.Array.data[2].m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4709059644689100784, guid: 535667ccf188a0b409b5fe3003cc8e49, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.033141002

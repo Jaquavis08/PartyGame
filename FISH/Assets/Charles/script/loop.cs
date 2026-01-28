@@ -22,5 +22,6 @@ public class loop : MonoBehaviour
             Vector2 newPosition = new Vector2(player.transform.position.x, 500);
             player.transform.position = newPosition;
         }
+
     }
 }

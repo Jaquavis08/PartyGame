@@ -5,7 +5,7 @@ public class FishAttack : MonoBehaviour
 {
     public float attackRange = 2.0f;
     public Rigidbody2D rb2d;
-    public void Attack()
+    private void Attack()
     {
         PlayerInput pI = GetComponent<PlayerInput>();
         GetComponent <Animator>().SetTrigger("Attack");
