@@ -4,7 +4,7 @@ using UnityEngine.InputSystem;
 [RequireComponent(typeof(PlayerInput), typeof(Animator), typeof(Rigidbody2D))]
 public class FishAttack : MonoBehaviour
 {
-    public float attackRange = 300.0f;
+    public float attackRange = 100.0f;
     public Rigidbody2D rb2d;
 
     private PlayerInput playerInput;
