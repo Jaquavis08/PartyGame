@@ -45,11 +45,11 @@ public class TDMovement : MonoBehaviour
       
         if (facingDirection == 1)
         {
-            parent.transform.GetChild(0).gameObject.GetComponent<RectTransform>().localScale = new Vector3(1, 1, 1);
+            parent.transform.GetChild(0).gameObject.GetComponent<RectTransform>().localScale = new Vector3(-1, 1, 1);
         }
         else if (facingDirection == -1)
         {
-            parent.transform.GetChild(0).gameObject.GetComponent<RectTransform>().localScale = new Vector3(1, -1, 1);
+            parent.transform.GetChild(0).gameObject.GetComponent<RectTransform>().localScale = new Vector3(1, 1, 1);
         }
     }
 
