@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      blazenek-scaled_0: -3563580370961792669
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
