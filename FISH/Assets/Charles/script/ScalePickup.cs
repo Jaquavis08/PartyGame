@@ -9,7 +9,7 @@ public class ScalePickup : MonoBehaviour
         
         if (other.CompareTag("Player"))
         {
-            playerscore=+1; // Increase scale by 0.1 as an example
+            //playerscore=+1; // Increase scale by 0.1 as an example
             Destroy(gameObject); // Destroy the pickup after collecting
 
         }
