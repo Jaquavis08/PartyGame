@@ -51,10 +51,8 @@ public class FishAttack : MonoBehaviour
         Gizmos.DrawWireSphere(spherePos, 0.1f);
     }
 
-    private void OnAttack(PlayerInput playerinput playerAction )
+    private void OnAttack()
     {
-        // Use the InputValue properly instead of leaving a stray expression
-        if (playerinput = playerAction.Atack)
-            Attack();
+        Attack();
     }
 }
