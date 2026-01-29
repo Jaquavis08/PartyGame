@@ -1,0 +1,27 @@
+using UnityEngine;
+
+public class loop : MonoBehaviour
+{
+    private GameObject player;
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (player.transform.position.y >= 505)
+        {
+            Vector2 newPosition = new Vector2(player.transform.position.x, 5);
+            player.transform.position = newPosition;
+        }
+        if (player.transform.position.y <= 0)
+        {
+            Vector2 newPosition = new Vector2(player.transform.position.x, 500);
+            player.transform.position = newPosition;
+        }
+
+    }
+}
