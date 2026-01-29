@@ -25,6 +25,11 @@ public class loop : MonoBehaviour
     }
     private void OnTriggerCollider2D(Collider2D other)  
     {
+        if (player == null)
+        {
+            player = GameObject.FindWithTag("Player");
+        }
+        
         if (other.CompareTag("borderTop"))
         {
            player.transform.position = new Vector3(player.transform.position.x, borderBottom.transform.position.y + 1f, player.transform.position.z);
