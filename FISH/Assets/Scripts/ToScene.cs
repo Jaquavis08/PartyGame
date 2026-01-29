@@ -7,4 +7,9 @@ public class ToScene : MonoBehaviour
     {
         SceneManager.LoadScene(sceneName);
     }
+
+    public void Quit(string)
+    {
+
+    }
 }
