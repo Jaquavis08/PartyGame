@@ -22,6 +22,7 @@ public class FishAttack : MonoBehaviour
 
     public void Attack()
     {
+        Debug.Log("attacked");
         animator.SetTrigger("Attack");
     }
 
@@ -39,7 +40,7 @@ public class FishAttack : MonoBehaviour
             {
                 Debug.Log("Hit: " + hit.collider.name);
                 // Apply damage or effects to the hit player
-
+                Debug.Log("attacked");
             }
         }
     }
@@ -53,6 +54,7 @@ public class FishAttack : MonoBehaviour
 
     private void OnAttack()
     {
+        Debug.Log("attacked");
         Attack();
     }
 }
