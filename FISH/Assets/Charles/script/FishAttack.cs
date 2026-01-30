@@ -24,7 +24,7 @@ public class FishAttack : MonoBehaviour
     public void Attack()
     {
         Debug.Log("attacked");
-        animator.SetTrigger("Attack");
+        animator.SetBool("isAttacking", true);
     }
 
     void Update()
@@ -57,5 +57,10 @@ public class FishAttack : MonoBehaviour
     {
          Debug.Log("attacked");
         Attack();
+    }
+
+    public void endAttack()
+    {
+        animator.SetBool("isAttacking", false);
     }
 }
