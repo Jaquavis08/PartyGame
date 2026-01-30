@@ -8,9 +8,10 @@ public class FishAttack : MonoBehaviour
 {
     public float attackRange = 100.0f;
     public Rigidbody2D rb2d;
+    public GameObject parent;
 
     private PlayerInput playerInput;
-    private Animator animator;
+    [SerializeField] private Animator animator;
 
     private void Awake()
     {
@@ -54,7 +55,7 @@ public class FishAttack : MonoBehaviour
 
     private void OnAttack()
     {
-        Debug.Log("attacked");
+         Debug.Log("attacked");
         Attack();
     }
 }

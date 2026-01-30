@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 4904323487149630598}
   - component: {fileID: 2001742188403656522}
   - component: {fileID: -8319046259537052055}
+  - component: {fileID: 6499326993375854797}
+  - component: {fileID: 8270957908028025478}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -125,6 +127,44 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 400.6
+  parent: {fileID: 7807203404837178833}
+  animator: {fileID: 7592827367667929603}
+--- !u!95 &6499326993375854797
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7807203404837178833}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &8270957908028025478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7807203404837178833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee87e77cfc94c0d4faff86ee86a13181, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackRange: 100
+  rb2d: {fileID: 2001742188403656522}
   parent: {fileID: 7807203404837178833}
   animator: {fileID: 7592827367667929603}
 --- !u!1 &8262631649093647569
