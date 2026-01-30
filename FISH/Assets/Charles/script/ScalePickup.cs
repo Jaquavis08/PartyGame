@@ -16,6 +16,7 @@ public class ScalePickup : MonoBehaviour
         {
             //playerscore=+1; // Increase scale by 0.1 as an example
             Destroy(gameObject); // Destroy the pickup after collecting
+            //Create(gameObject)
             
         }
     }
