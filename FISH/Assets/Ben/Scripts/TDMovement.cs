@@ -3,16 +3,18 @@ using UnityEngine.InputSystem;
 
 public class TDMovement : MonoBehaviour
 {
-    [SerializeField]
-    private float speed;
+    [SerializeField] private float speed;
+
     private GameObject player;
-    private Vector3 playerY;
-    private Rigidbody2D rb2d;
+    public GameObject parent;
+  
     private Vector2 _movementInput;
     private Vector2 smoothedMovementInput;
     private Vector2 movementInputSmoothVelocity;
-    public GameObject parent;
+    
+    private Rigidbody2D rb2d;
 
+    [SerializeField] private Animator animator;
 
     private int facingDirection = 1;
 
@@ -28,8 +30,16 @@ public class TDMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        smoothedMovementInput = Vector2.SmoothDamp(smoothedMovementInput, _movementInput, ref movementInputSmoothVelocity, 0.35f);
+        smoothedMovementInput = Vector2.SmoothDamp(smoothedMovementInput, _movementInput, ref movementInputSmoothVelocity, 0.4f);
         rb2d.linearVelocity = smoothedMovementInput * speed;
+        if (_movementInput.x != 0)
+        {
+            animator.SetBool("isRunning", true);
+        }
+        else
+        {
+            animator.SetBool("isRunning", false);
+        }
     }
 
     public void Flip()

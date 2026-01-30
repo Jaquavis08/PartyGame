@@ -1,10 +1,14 @@
 using JetBrains.Annotations;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public class ScalePickup : MonoBehaviour
 {
     public GameObject playerscore;
-    //public gameObject scale
+    void Start()
+    {
+        playerscore.GetComponent<float>();
+    }
     private void OnTriggerEnter2D(Collider2D other)
     {
         
@@ -13,6 +17,7 @@ public class ScalePickup : MonoBehaviour
             //playerscore=+1; // Increase scale by 0.1 as an example
             Destroy(gameObject); // Destroy the pickup after collecting
             //Create(gameObject)
+            
         }
     }
 }

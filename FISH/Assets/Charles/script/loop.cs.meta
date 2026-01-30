@@ -1,2 +1,16 @@
 fileFormatVersion: 2
 guid: 722a8c71e313daf488eddaa2ef66fdab
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - borderTop: {fileID: 6560968074370552630, guid: 839fa385e06c13441b2e17dd249515cd, type: 3}
+  - borderBottom: {fileID: 4157932707434383017, guid: 10c2abdde5c5f214bac04f8333587c35, type: 3}
+  - borderLeft: {fileID: 3227611261598562890, guid: cac233968ca80084b89c3bb13ddeb72d, type: 3}
+  - borderRight: {fileID: 1907891400838611539, guid: 6a0aee957d6c30748bc0d67d0c8a3a06, type: 3}
+  - rb2d: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

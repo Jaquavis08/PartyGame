@@ -1,5 +1,7 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Windows;
 
 [RequireComponent(typeof(PlayerInput), typeof(Animator), typeof(Rigidbody2D))]
 public class FishAttack : MonoBehaviour
@@ -12,13 +14,15 @@ public class FishAttack : MonoBehaviour
 
     private void Awake()
     {
+        OnDrawGizmosSelected();
         playerInput = GetComponent<PlayerInput>();
-       // animator = GetComponent<Animator>();
+        animator = GetComponent<Animator>();
         if (rb2d == null) rb2d = GetComponent<Rigidbody2D>();
     }
 
     public void Attack()
     {
+        Debug.Log("attacked");
         animator.SetTrigger("Attack");
     }
 
@@ -36,7 +40,7 @@ public class FishAttack : MonoBehaviour
             {
                 Debug.Log("Hit: " + hit.collider.name);
                 // Apply damage or effects to the hit player
-
+                Debug.Log("attacked");
             }
         }
     }
@@ -48,10 +52,9 @@ public class FishAttack : MonoBehaviour
         Gizmos.DrawWireSphere(spherePos, 0.1f);
     }
 
-    private void OnAttack(InputValue inputValue)
+    private void OnAttack()
     {
-        // Use the InputValue properly instead of leaving a stray expression
-        if (inputValue.Get<float>() > 0f)
-            Attack();
+        Debug.Log("attacked");
+        Attack();
     }
 }
