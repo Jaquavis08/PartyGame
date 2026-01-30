@@ -6,7 +6,7 @@ using UnityEngine.Windows;
 [RequireComponent(typeof(PlayerInput), typeof(Animator), typeof(Rigidbody2D))]
 public class FishAttack : MonoBehaviour
 {
-    public float attackRange = 100.0f;
+    public float attackRange = 300.0f;
     public Rigidbody2D rb2d;
     public GameObject parent;
 
@@ -15,7 +15,7 @@ public class FishAttack : MonoBehaviour
 
     private void Awake()
     {
-        OnDrawGizmosSelected();
+        OnDrawGizmos();
         playerInput = GetComponent<PlayerInput>();
         animator = GetComponent<Animator>();
         if (rb2d == null) rb2d = GetComponent<Rigidbody2D>();
@@ -24,7 +24,7 @@ public class FishAttack : MonoBehaviour
     public void Attack()
     {
         Debug.Log("attacked");
-        animator.SetBool("isAttacking", true);
+        animator.SetTrigger("attacked");
     }
 
     void Update()
@@ -46,21 +46,20 @@ public class FishAttack : MonoBehaviour
         }
     }
 
-    private void OnDrawGizmosSelected()
+    private void OnDrawGizmos()
     {
-        if (rb2d == null) return;
+        if (rb2d == null)
+        {
+            return;
+        }
+        Debug.Log("Drawing Gizmos");
+        Gizmos.color = Color.red;
         Vector2 spherePos = rb2d.position + new Vector2(Mathf.Sign(transform.localScale.x) * attackRange, 0f);
-        Gizmos.DrawWireSphere(spherePos, 0.1f);
+        Gizmos.DrawWireSphere((Vector3)spherePos, 25f);
     }
 
     private void OnAttack()
     {
-         Debug.Log("attacked");
         Attack();
-    }
-
-    public void endAttack()
-    {
-        animator.SetBool("isAttacking", false);
     }
 }
