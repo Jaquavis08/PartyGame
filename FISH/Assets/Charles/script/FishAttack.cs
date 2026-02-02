@@ -55,7 +55,8 @@ public class FishAttack : MonoBehaviour
         Debug.Log("Drawing Gizmos");
         Gizmos.color = Color.red;
         Vector2 spherePos = rb2d.position + new Vector2(Mathf.Sign(transform.localScale.x) * attackRange, 0f);
-        Gizmos.DrawWireSphere((Vector3)spherePos, 25f);
+        Gizmos.DrawWireSphere((Vector3)spherePos, 2f);
+
     }
 
     private void OnAttack()
