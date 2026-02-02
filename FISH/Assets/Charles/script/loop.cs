@@ -7,7 +7,7 @@ public class loop : MonoBehaviour
     public GameObject borderBottom;
     public GameObject borderLeft;
     public GameObject borderRight;
-    private GameObject player;
+    public GameObject player;
     private Rigidbody2D rb2d;
  
     // Start is called once before the first execution of Update after the MonoBehaviour is created

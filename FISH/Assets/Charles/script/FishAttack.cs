@@ -24,8 +24,9 @@ public class FishAttack : MonoBehaviour
 
     public void Attack()
     {
+        
         Collider2D[] player = Physics2D.OverlapCircleAll(attackPoint.transform.position, radius, players);
-
+        Debug.Log("Attack is called");
         foreach (Collider2D playerGameObject in player)
         {
             Debug.Log("Hit Player");
@@ -41,7 +42,7 @@ public class FishAttack : MonoBehaviour
         if (attackAction != null && attackAction.WasPerformedThisFrame())
         {
             animator.SetBool("isAttacking", true);
-            
+
         }
     }
 
@@ -54,10 +55,5 @@ public class FishAttack : MonoBehaviour
     {
         Gizmos.DrawWireSphere(attackPoint.transform.position, radius);
 
-    }
-
-    private void OnAttack()
-    {
-        Attack();
     }
 }
