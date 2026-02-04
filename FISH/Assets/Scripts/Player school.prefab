@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 4599202982284202995}
   - component: {fileID: 8689297654871172569}
   m_Layer: 5
-  m_Name: Image (9)
-  m_TagString: Untagged
+  m_Name: Fih9
+  m_TagString: Fih
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -111,8 +111,8 @@ GameObject:
   - component: {fileID: 6551192846110372059}
   - component: {fileID: 382220518980168505}
   m_Layer: 5
-  m_Name: Image (7)
-  m_TagString: Untagged
+  m_Name: Fih7
+  m_TagString: Fih
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -209,8 +209,8 @@ GameObject:
   - component: {fileID: 8646819481832407209}
   - component: {fileID: 4363983257451523736}
   m_Layer: 5
-  m_Name: Image (5)
-  m_TagString: Untagged
+  m_Name: Fih5
+  m_TagString: Fih
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -307,8 +307,8 @@ GameObject:
   - component: {fileID: 6835088643969508672}
   - component: {fileID: 352351214503928325}
   m_Layer: 5
-  m_Name: Image (6)
-  m_TagString: Untagged
+  m_Name: Fih6
+  m_TagString: Fih
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -405,8 +405,8 @@ GameObject:
   - component: {fileID: 4854072673875858411}
   - component: {fileID: 2072605250589090604}
   m_Layer: 5
-  m_Name: Image (4)
-  m_TagString: Untagged
+  m_Name: Fih4
+  m_TagString: Fih
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -504,7 +504,7 @@ GameObject:
   - component: {fileID: 2906331819726277113}
   - component: {fileID: 5340349094506353181}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Fih
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -658,8 +658,8 @@ GameObject:
   - component: {fileID: 949539064638988899}
   - component: {fileID: 8147154701963340200}
   m_Layer: 5
-  m_Name: Image (10)
-  m_TagString: Untagged
+  m_Name: Fih10
+  m_TagString: Fih
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -906,9 +906,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee87e77cfc94c0d4faff86ee86a13181, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackRange: 100
+  radius: 0
   rb2d: {fileID: 8590065175244402441}
   parent: {fileID: 5012959610072726943}
+  attackPoint: {fileID: 0}
+  players:
+    serializedVersion: 2
+    m_Bits: 0
   animator: {fileID: 2906331819726277113}
 --- !u!1 &6050173306128845047
 GameObject:
@@ -923,8 +927,8 @@ GameObject:
   - component: {fileID: 5676474685442270785}
   - component: {fileID: 288393022851704971}
   m_Layer: 5
-  m_Name: Image (1)
-  m_TagString: Untagged
+  m_Name: Fih1
+  m_TagString: Fih
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1021,8 +1025,8 @@ GameObject:
   - component: {fileID: 4518458279542649509}
   - component: {fileID: 3066813521892915387}
   m_Layer: 5
-  m_Name: Image (2)
-  m_TagString: Untagged
+  m_Name: Fih2
+  m_TagString: Fih
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1119,8 +1123,8 @@ GameObject:
   - component: {fileID: 4642919949254490330}
   - component: {fileID: 1500079545079037553}
   m_Layer: 5
-  m_Name: Image (3)
-  m_TagString: Untagged
+  m_Name: Fih3
+  m_TagString: Fih
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1217,8 +1221,8 @@ GameObject:
   - component: {fileID: 2332305628447402944}
   - component: {fileID: 9125447664097034881}
   m_Layer: 5
-  m_Name: Image (8)
-  m_TagString: Untagged
+  m_Name: Fih8
+  m_TagString: Fih
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
