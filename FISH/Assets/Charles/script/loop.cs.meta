@@ -8,6 +8,7 @@ MonoImporter:
   - borderBottom: {fileID: 4157932707434383017, guid: 10c2abdde5c5f214bac04f8333587c35, type: 3}
   - borderLeft: {fileID: 3227611261598562890, guid: cac233968ca80084b89c3bb13ddeb72d, type: 3}
   - borderRight: {fileID: 1907891400838611539, guid: 6a0aee957d6c30748bc0d67d0c8a3a06, type: 3}
+  - player: {fileID: 5430597756039140392, guid: 535667ccf188a0b409b5fe3003cc8e49, type: 3}
   - rb2d: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
