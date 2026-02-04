@@ -13,7 +13,8 @@ GameObject:
   - component: {fileID: 8070386157807851070}
   - component: {fileID: 2906331819726277113}
   - component: {fileID: 5340349094506353181}
-  m_Layer: 5
+  - component: {fileID: 8262400453438296157}
+  m_Layer: 6
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38,7 +39,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -4.0737267, y: -1.02}
-  m_SizeDelta: {x: 1.85255, y: 1.46457}
+  m_SizeDelta: {x: 3, y: 3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5907084745780628938
 CanvasRenderer:
@@ -146,6 +147,26 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.7517575, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &8262400453438296157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3759230466849430056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee87e77cfc94c0d4faff86ee86a13181, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radius: 20
+  rb2d: {fileID: 8590065175244402441}
+  parent: {fileID: 5012959610072726943}
+  attackPoint: {fileID: 9082054423918194143}
+  players:
+    serializedVersion: 2
+    m_Bits: 64
+  animator: {fileID: 2906331819726277113}
 --- !u!1 &5012959610072726943
 GameObject:
   m_ObjectHideFlags: 0
@@ -159,9 +180,7 @@ GameObject:
   - component: {fileID: 8405044703449738986}
   - component: {fileID: 8590065175244402441}
   - component: {fileID: 1598173007928489203}
-  - component: {fileID: 6635637631040828648}
-  - component: {fileID: 5259370726061763151}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: 'Player3 '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -275,48 +294,6 @@ MonoBehaviour:
   speed: 400.6
   parent: {fileID: 5012959610072726943}
   animator: {fileID: 2906331819726277113}
---- !u!95 &6635637631040828648
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5012959610072726943}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
---- !u!114 &5259370726061763151
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5012959610072726943}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee87e77cfc94c0d4faff86ee86a13181, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  radius: 0
-  rb2d: {fileID: 8590065175244402441}
-  parent: {fileID: 5012959610072726943}
-  attackPoint: {fileID: 9082054423918194143}
-  players:
-    serializedVersion: 2
-    m_Bits: 0
-  animator: {fileID: 2906331819726277113}
 --- !u!1 &9082054423918194143
 GameObject:
   m_ObjectHideFlags: 0
@@ -326,7 +303,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1937975581732665016}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: attackpoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -342,7 +319,7 @@ Transform:
   m_GameObject: {fileID: 9082054423918194143}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.40999937, y: 0.100000024, z: 0}
+  m_LocalPosition: {x: -1.438, y: 0.047, z: 0}
   m_LocalScale: {x: 0.022138588, y: 0.022138588, z: 0.022138588}
   m_ConstrainProportionsScale: 0
   m_Children: []
