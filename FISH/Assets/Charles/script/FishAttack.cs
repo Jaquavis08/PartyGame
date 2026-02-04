@@ -37,6 +37,7 @@ public class FishAttack : MonoBehaviour
     {
         if (playerInput == null || rb2d == null) return;
 
+        
         // Use the PlayerInput instance actions directly
         var attackAction = playerInput.actions["Attack"];
         if (attackAction != null && attackAction.WasPerformedThisFrame())
@@ -55,5 +56,12 @@ public class FishAttack : MonoBehaviour
     {
         Gizmos.DrawWireSphere(attackPoint.transform.position, radius);
 
+    }
+    public void onattack(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            Attack();
+        }
     }
 }
