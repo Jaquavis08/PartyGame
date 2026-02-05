@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Windows;
 
-[RequireComponent(typeof(PlayerInput), typeof(Animator), typeof(Rigidbody2D))]
+
 public class FishAttack : MonoBehaviour
 {
     public float radius;
@@ -18,7 +18,6 @@ public class FishAttack : MonoBehaviour
     private void Awake()
     {
         playerInput = GetComponent<PlayerInput>();
-        animator = GetComponent<Animator>();
         if (rb2d == null) rb2d = GetComponent<Rigidbody2D>();
     }
 
@@ -39,6 +38,7 @@ public class FishAttack : MonoBehaviour
 
         // Use the PlayerInput instance actions directly
         var attackAction = playerInput.actions["Attack"];
+        
         if (attackAction != null && attackAction.WasPerformedThisFrame())
         {
             animator.SetBool("isAttacking", true);
@@ -56,4 +56,5 @@ public class FishAttack : MonoBehaviour
         Gizmos.DrawWireSphere(attackPoint.transform.position, radius);
 
     }
+    
 }
