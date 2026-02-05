@@ -12,12 +12,12 @@ public class FishAttack : MonoBehaviour
     public GameObject attackPoint;
     public LayerMask players;
 
-    private PlayerInput playerInput;
+    public PlayerInput playerInput;
     [SerializeField] private Animator animator;
 
     private void Awake()
     {
-        playerInput = GetComponent<PlayerInput>();
+       
         if (rb2d == null) rb2d = GetComponent<Rigidbody2D>();
     }
 
@@ -29,12 +29,12 @@ public class FishAttack : MonoBehaviour
         foreach (Collider2D playerGameObject in player)
         {
             Debug.Log("Hit Player");
-        }
+        } 
     }
 
     void Update()
     {
-        if (playerInput == null || rb2d == null) return;
+       
 
         // Use the PlayerInput instance actions directly
         var attackAction = playerInput.actions["Attack"];
