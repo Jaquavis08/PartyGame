@@ -12,7 +12,7 @@ public class NumberOfPlayers : MonoBehaviour
             GetComponent<PlayerJoin>().image.SetActive(true);
 
         }
-        if (numberOfPlayers != null && numberOfPlayers != 0)
+            if (numberOfPlayers != 0 )
         {
 
             GetComponent<PlayerJoin>().image.SetActive(false);
