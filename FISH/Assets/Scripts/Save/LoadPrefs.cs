@@ -4,13 +4,19 @@ using TMPro;
 
 public class LoadPrefs : MonoBehaviour
 {
-    //public TMPro_Text
+    private float points;
 
     private void Awake()
     {
         if (PlayerPrefs.HasKey("Points"))
         {
-            float points = PlayerPrefs.GetFloat("Points");
+            points = PlayerPrefs.GetFloat("Points");
+        }
+        else
+        {
+            PlayerPrefs.SetFloat("Points", 0f);
+            points = 0f;
+            Debug.Log("No points found in PlayerPrefs.");
         }
     }
 }
