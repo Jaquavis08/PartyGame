@@ -15,9 +15,6 @@ public class SchoolFishAnimations : MonoBehaviour
        else
        {
            animator.SetBool("isRunning", false);
-       }
-        {
-           
-       }
+       }          
     }
 }
