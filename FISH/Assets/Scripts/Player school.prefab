@@ -976,7 +976,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 400.6
   parent: {fileID: 5012959610072726943}
-  animator: {fileID: 2906331819726277113}
+  animator: {fileID: 6635637631040828648}
 --- !u!95 &6635637631040828648
 Animator:
   serializedVersion: 7
@@ -1014,11 +1014,11 @@ MonoBehaviour:
   radius: 0
   rb2d: {fileID: 8590065175244402441}
   parent: {fileID: 5012959610072726943}
-  attackPoint: {fileID: 0}
+  attackPoint: {fileID: 3759230466849430056}
   players:
     serializedVersion: 2
     m_Bits: 0
-  playerInput: {fileID: 0}
+  playerInput: {fileID: 110621998033811636}
   animator: {fileID: 2906331819726277113}
   isHit: 0
 --- !u!1 &6050173306128845047
