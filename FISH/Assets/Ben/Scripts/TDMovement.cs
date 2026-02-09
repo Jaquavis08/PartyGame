@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -66,6 +67,16 @@ public class TDMovement : MonoBehaviour
     private void OnMove(InputValue inputValue)
     {
         _movementInput = inputValue.Get<Vector2>();
+    }
+
+    public void changeToLessSpeed()
+    {
+        speed = 250f;
+    }
+
+    public void changeToOriginalSpeed()
+    {
+        speed = 400.6f;
     }
 
 }
