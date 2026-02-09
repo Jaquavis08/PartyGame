@@ -13,10 +13,8 @@ public class FishAttack : MonoBehaviour
     public LayerMask players;
     public PlayerInput playerInput;
     [SerializeField] private Animator animator;
-    private bool isAttack = false;
-    public bool IsAttack => isAttack;
+    public GameObject AttackArea;
 
-    public void clearattacking()=> isAttack = false;
     private void Awake()
     {
        
@@ -31,7 +29,7 @@ public class FishAttack : MonoBehaviour
         foreach (Collider2D playerGameObject in player)
         {
             Debug.Log("Hit Player");
-            isAttack = true;
+            AttackArea.SetActive(true);
         } 
 
     }
@@ -46,8 +44,9 @@ public class FishAttack : MonoBehaviour
         if (attackAction != null && attackAction.WasPerformedThisFrame())
         {
             animator.SetBool("isAttacking", true);
-
+            AttackArea.SetActive(false);
         }
+    
     }
 
     public void EndAttack()

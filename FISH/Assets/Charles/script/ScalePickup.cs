@@ -4,19 +4,20 @@ using UnityEngine.Rendering;
 
 public class ScalePickup : MonoBehaviour
 {
-    public GameObject playerscore;
+    private GameObject scale;
+    public float playerscore =0 ;
     void Start()
     {
-        playerscore.GetComponent<float>();
+        
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
         
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("hit"))
         {
-            //playerscore=+1; // Increase scale by 0.1 as an example
-            Destroy(gameObject); // Destroy the pickup after collecting
-            //Create(gameObject)
+            playerscore=+1; // Increase scale by 0.1 as an example
+            scale.SetActive(false);// Destroy the pickup after collecting
+            
             
         }
     }
