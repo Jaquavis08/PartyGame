@@ -2063,6 +2063,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8536990834631756125, guid: 26d047f95e93654419deb376ea866904, type: 3}
+      propertyPath: m_SplitScreen
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8536990834631756125, guid: 26d047f95e93654419deb376ea866904, type: 3}
       propertyPath: m_PlayerPrefab
       value: 
       objectReference: {fileID: 5012959610072726943, guid: 9cde8d554e71d914fa2555709d7f0296, type: 3}
