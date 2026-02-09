@@ -9,7 +9,7 @@ public class LeaderStats : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        DontDestroyOnLoad(gameObject);
     }
 
     // Update is called once per frame
@@ -20,12 +20,10 @@ public class LeaderStats : MonoBehaviour
         {
             if (player == null) continue;
 
-            int id = player.GetInstanceID();
-
             // Only add if we don't already have an entry for this player
-            if (!stats.Exists(s => s.ID == id || s.player == player))
+            if (!stats.Exists(s => s.player == player))
             {
-                stats.Add(new Data { player = player, points = 0, ID = id });
+                stats.Add(new Data { player = player, points = 0});
             }
         }
 
