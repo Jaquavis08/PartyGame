@@ -16,6 +16,7 @@ public class StealOFih : MonoBehaviour
         Debug.Log("started looking for child");
         GameObject child = target.transform.GetChild(0).gameObject;
         Destroy(child.gameObject);
+        //PointSystem.Instance.Playerscore(target.pa, 1);
         return false;
     }
 }
