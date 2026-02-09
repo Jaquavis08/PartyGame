@@ -13,10 +13,10 @@ public class FishAttack : MonoBehaviour
     public LayerMask players;
     public PlayerInput playerInput;
     [SerializeField] private Animator animator;
-    private bool isAttacking = false;
-    public bool IsAttacking => isAttacking;
+    private bool isAttack = false;
+    public bool IsAttack => isAttack;
 
-    public void clearattacking()=> isAttacking = false;
+    public void clearattacking()=> isAttack = false;
     private void Awake()
     {
        
@@ -31,7 +31,7 @@ public class FishAttack : MonoBehaviour
         foreach (Collider2D playerGameObject in player)
         {
             Debug.Log("Hit Player");
-            isAttacking = true;
+            isAttack = true;
         } 
 
     }
