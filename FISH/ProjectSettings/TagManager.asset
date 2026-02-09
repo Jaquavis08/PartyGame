@@ -9,6 +9,8 @@ TagManager:
   - borderRight
   - borderLeft
   - Fih
+  - Undefined
+  - hit
   layers:
   - Default
   - TransparentFX

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 9089530077375224229}
   - component: {fileID: 3423130758228350812}
   - component: {fileID: 7763446022131777110}
+  - component: {fileID: 2323262279150515479}
   m_Layer: 0
   m_Name: scale
   m_TagString: Untagged
@@ -36,7 +37,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -7.43, y: 0.45}
+  m_AnchoredPosition: {x: -7.54, y: 0.56}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!61 &5873394940637923067
@@ -113,7 +114,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: -3563580370961792669, guid: 4e0272f42e745f346b4e1e21a2225ede, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -135,6 +136,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d94399c609833044a8cb2f45b3a1241, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scale: {fileID: 5949740979369898135}
+  sca: {fileID: 5949740979369898135}
+  player: {fileID: 5012959610072726943, guid: e6aa5b68a5fb8d2498f9203f07aac82c, type: 3}
   fishAttack: {fileID: 0}
-  isHit: 0
+  prb2d: {fileID: 8590065175244402441, guid: e6aa5b68a5fb8d2498f9203f07aac82c, type: 3}
+--- !u!50 &2323262279150515479
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5949740979369898135}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0

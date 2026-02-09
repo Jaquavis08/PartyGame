@@ -13,9 +13,10 @@ public class FishAttack : MonoBehaviour
     public LayerMask players;
     public PlayerInput playerInput;
     [SerializeField] private Animator animator;
-    public bool isHit =false;
+    private bool isAttacking = false;
+    public bool IsAttacking => isAttacking;
 
-
+    public void clearattacking()=> isAttacking = false;
     private void Awake()
     {
        
@@ -30,19 +31,11 @@ public class FishAttack : MonoBehaviour
         foreach (Collider2D playerGameObject in player)
         {
             Debug.Log("Hit Player");
-                
+            isAttacking = true;
         } 
 
     }
-    public void OnControllerColliderHit(ControllerColliderHit hit)
-    {
-        parent.transform.parent = hit.collider.transform;
-        if (hit.collider.CompareTag("Player"))
-        {
-            Debug.Log("Hit Player");
-            isHit = true;
-        }
-    }
+    
     void Update()
     {
        
@@ -60,7 +53,7 @@ public class FishAttack : MonoBehaviour
     public void EndAttack()
     {
         animator.SetBool("isAttacking", false);
-        isHit = false;
+        
     }
 
     private void OnDrawGizmos()
