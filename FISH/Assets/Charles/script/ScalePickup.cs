@@ -5,20 +5,40 @@ using UnityEngine.Rendering;
 public class ScalePickup : MonoBehaviour
 {
     private GameObject scale;
-    public float playerscore =0 ;
+    public GameObject playerscore;
+    public float ps;
+
     void Start()
     {
         
     }
+
+    void Update()
+    {
+          //  if (playerscore != null)
+            //{
+              //  var scoreComponent = playerscore.GetComponent<Score>();
+                //if (scoreComponent != null)
+                //{
+                 //   ps = scoreComponent.score; // Update ps with the current score
+               // }
+      //  }
+    }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
-        
+        Debug.Log("Trigger ");
         if (other.CompareTag("hit"))
         {
-            playerscore=+1; // Increase scale by 0.1 as an example
-            scale.SetActive(false);// Destroy the pickup after collecting
             
-            
+            Debug.Log("found hit ");
+            ps += 1f; // Increase scale by 1 as an example
+            if (scale != null)
+            {
+                Debug.Log("scale colected ");
+                scale.SetActive(false);// Destroy the pickup after collectin
+               // scale.transform.position = new Vector3(hit.x, hit.y, hit.z); // Move it far away to effectively "destroy" it
+            }
         }
     }
 }
