@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8689297654871172569}
   - component: {fileID: 866526134509680203}
   m_Layer: 5
-  m_Name: Fih9
+  m_Name: fih9
   m_TagString: Fih
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -127,7 +127,7 @@ GameObject:
   - component: {fileID: 382220518980168505}
   - component: {fileID: 7551074199261955649}
   m_Layer: 5
-  m_Name: Fih7
+  m_Name: fih7
   m_TagString: Fih
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -240,7 +240,7 @@ GameObject:
   - component: {fileID: 4363983257451523736}
   - component: {fileID: 474790017368535565}
   m_Layer: 5
-  m_Name: Fih5
+  m_Name: fih5
   m_TagString: Fih
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -353,7 +353,7 @@ GameObject:
   - component: {fileID: 352351214503928325}
   - component: {fileID: 3701800700543148392}
   m_Layer: 5
-  m_Name: Fih6
+  m_Name: fih6
   m_TagString: Fih
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -466,7 +466,7 @@ GameObject:
   - component: {fileID: 2072605250589090604}
   - component: {fileID: 6638759217484409033}
   m_Layer: 5
-  m_Name: Fih4
+  m_Name: fih4
   m_TagString: Fih
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -705,7 +705,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -749,7 +749,7 @@ GameObject:
   - component: {fileID: 8147154701963340200}
   - component: {fileID: 5913561417256268930}
   m_Layer: 5
-  m_Name: Fih10
+  m_Name: fih10
   m_TagString: Fih
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -976,7 +976,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 400.6
   parent: {fileID: 5012959610072726943}
-  animator: {fileID: 2906331819726277113}
+  animator: {fileID: 6635637631040828648}
 --- !u!95 &6635637631040828648
 Animator:
   serializedVersion: 7
@@ -1014,13 +1014,12 @@ MonoBehaviour:
   radius: 0
   rb2d: {fileID: 8590065175244402441}
   parent: {fileID: 5012959610072726943}
-  attackPoint: {fileID: 0}
+  attackPoint: {fileID: 3759230466849430056}
   players:
     serializedVersion: 2
     m_Bits: 0
-  playerInput: {fileID: 0}
+  playerInput: {fileID: 110621998033811636}
   animator: {fileID: 2906331819726277113}
-  isHit: 0
 --- !u!1 &6050173306128845047
 GameObject:
   m_ObjectHideFlags: 0
@@ -1035,7 +1034,7 @@ GameObject:
   - component: {fileID: 288393022851704971}
   - component: {fileID: 3518299427877700822}
   m_Layer: 5
-  m_Name: Fih1
+  m_Name: fih1
   m_TagString: Fih
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1148,7 +1147,7 @@ GameObject:
   - component: {fileID: 3066813521892915387}
   - component: {fileID: 3974338986272691965}
   m_Layer: 5
-  m_Name: Fih2
+  m_Name: fih2
   m_TagString: Fih
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1261,7 +1260,7 @@ GameObject:
   - component: {fileID: 1500079545079037553}
   - component: {fileID: 1497944404244270233}
   m_Layer: 5
-  m_Name: Fih3
+  m_Name: fih3
   m_TagString: Fih
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1374,7 +1373,7 @@ GameObject:
   - component: {fileID: 9125447664097034881}
   - component: {fileID: 7283006634893856520}
   m_Layer: 5
-  m_Name: Fih8
+  m_Name: fih8
   m_TagString: Fih
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

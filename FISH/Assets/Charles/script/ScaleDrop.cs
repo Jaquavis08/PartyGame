@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Drawing;
@@ -8,30 +9,29 @@ using UnityEngine.UIElements;
 
 public class ScaleDrop : MonoBehaviour
 {
-    
-    public GameObject scale;
-    public FishAttack fishAttack;
+    public GameObject sca;
    
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        scale.SetActive(false); // Initially hide the scale
+        // Hide the scale initially
+        if (sca != null)
+            sca.SetActive(false);
     }
 
-    // Update is called once per frame
-    void Update()
+    // Public method to start the drop coroutine from another component
+    public void TriggerDrop()
     {
-       StartCoroutine((IEnumerator)DropedScale());
+        StartCoroutine(DropedScale());
     }
-    public IEnumerable DropedScale()
+
+    public IEnumerator DropedScale()
     {
-     if (fishAttack.isHit == true )
+        
+        if (sca != null)
         {
-            
-            scale.SetActive(true); // Show the scale when hit
-            yield return new WaitForSeconds(5f); // Keep the scale visible for 5 seconds
+            sca.SetActive(true);
+            yield return new WaitForSeconds(10f);
+            sca.SetActive(false);
         }
     }
-   
 }
