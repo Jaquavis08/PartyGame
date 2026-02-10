@@ -108,7 +108,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -186,12 +186,12 @@ TextureImporter:
       name: bubblesmovewoahwoahwoah_2
       rect:
         serializedVersion: 2
-        x: 68
-        y: 73
-        width: 32
-        height: 31
+        x: 0
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -205,155 +205,67 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bubblesmovewoahwoahwoah_4
+      name: bubblesmovewoahwoahwoah_0
       rect:
         serializedVersion: 2
-        x: 3
-        y: 72
-        width: 35
-        height: 26
+        x: 0
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 6a6214192f122cc20800000000000000
-      internalID: 3225177608853464742
+      spriteID: ec3ea67e8c6271843be1e947897c5ed0
+      internalID: -2564324809899260175
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bubblesmovewoahwoahwoah_7
+      name: bubblesmovewoahwoahwoah_1
       rect:
         serializedVersion: 2
-        x: 44
-        y: 74
-        width: 16
-        height: 25
+        x: 64
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 1c8313c2324c8f400800000000000000
-      internalID: 358251825720277185
+      spriteID: 7ade4881b859f674c80573f82577ad47
+      internalID: 2866072917694472955
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bubblesmovewoahwoahwoah_9
+      name: bubblesmovewoahwoahwoah_3
       rect:
         serializedVersion: 2
-        x: 107
-        y: 80
-        width: 16
-        height: 22
+        x: 64
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 1829b901f149491e0800000000000000
-      internalID: -2191964257479060863
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bubblesmovewoahwoahwoah_10
-      rect:
-        serializedVersion: 2
-        x: 3
-        y: 9
-        width: 35
-        height: 34
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 556cf485c572bde30800000000000000
-      internalID: 4529257127823263317
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bubblesmovewoahwoahwoah_11
-      rect:
-        serializedVersion: 2
-        x: 43
-        y: 18
-        width: 17
-        height: 25
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 33a19ba18c252c390800000000000000
-      internalID: -7799580585257002445
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bubblesmovewoahwoahwoah_13
-      rect:
-        serializedVersion: 2
-        x: 109
-        y: 15
-        width: 13
-        height: 23
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 06060681b7c0ed400800000000000000
-      internalID: 350731543810957408
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bubblesmovewoahwoahwoah_17
-      rect:
-        serializedVersion: 2
-        x: 66
-        y: 11
-        width: 38
-        height: 28
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 313bf0629b04597e0800000000000000
-      internalID: -1759428915466620141
+      spriteID: 7db1638d6e57c294689fa37b6ae4b257
+      internalID: -1200192020255593195
       vertices: []
       indices: 
       edges: []
@@ -374,24 +286,8 @@ TextureImporter:
     nameFileIdTable:
       bubblesmovewoahwoahwoah_0: -2564324809899260175
       bubblesmovewoahwoahwoah_1: 2866072917694472955
-      bubblesmovewoahwoahwoah_10: 4529257127823263317
-      bubblesmovewoahwoahwoah_11: -7799580585257002445
-      bubblesmovewoahwoahwoah_12: 5158839495082258796
-      bubblesmovewoahwoahwoah_13: 350731543810957408
-      bubblesmovewoahwoahwoah_14: 5955693306361864568
-      bubblesmovewoahwoahwoah_15: 7513880357397107606
-      bubblesmovewoahwoahwoah_16: -7246026682689788197
-      bubblesmovewoahwoahwoah_17: -1759428915466620141
-      bubblesmovewoahwoahwoah_18: 6958256249135945848
-      bubblesmovewoahwoahwoah_19: -8606796105263850958
       bubblesmovewoahwoahwoah_2: -3246353311183680464
       bubblesmovewoahwoahwoah_3: -1200192020255593195
-      bubblesmovewoahwoahwoah_4: 3225177608853464742
-      bubblesmovewoahwoahwoah_5: -4370965672310003065
-      bubblesmovewoahwoahwoah_6: 6528134146699564134
-      bubblesmovewoahwoahwoah_7: 358251825720277185
-      bubblesmovewoahwoahwoah_8: 3012165035546035331
-      bubblesmovewoahwoahwoah_9: -2191964257479060863
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
