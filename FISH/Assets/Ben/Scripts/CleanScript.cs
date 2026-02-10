@@ -15,14 +15,16 @@ public class CleanScript : MonoBehaviour
     public PlayerInput playerInput;
     public bool ExecuteGizmos;
 
+    public LayerMask cleanees;
+
     // Update is called once per frame
+
+    private void FixedUpdate()
+    {
+        
+    }
     void Update()
     {
-
-        if(ExecuteGizmos)
-        {
-            OnDrawGizmos();
-        }
         var startCleanAction = playerInput.actions["Interact"];
         var cleanAction = playerInput.actions["Clean"];
         var TDmovement = GetComponentInParent<TDMovement>();
@@ -32,11 +34,10 @@ public class CleanScript : MonoBehaviour
             anim.SetBool("isStartCleaning", true);
             started = true;
             TDmovement.changeToLessSpeed();
-            ExecuteGizmos = true;
         }
         if (started)
         {
-
+            ExecuteGizmos = true;
             if (cleanAction != null && cleanAction.WasPerformedThisFrame() && !pressed)
             {
                 Debug.Log("Pressed");
@@ -70,19 +71,30 @@ public class CleanScript : MonoBehaviour
         anim.SetBool("isCleaning", true);
     }
 
+    public void clean()
+    {
+               Collider2D[] cleanee = Physics2D.OverlapCircleAll(cleanPoint.transform.position, radius, cleanees);
+        foreach (Collider2D cleanGameObject in cleanee)
+        {
+            if (cleanGameObject.gameObject.CompareTag("Cleanable"))
+            {
+                Debug.Log("Cleaned");
+                Destroy(cleanGameObject.gameObject);
+            }
+        }
+    }
+
     public void EndClean()
     {
         anim.SetBool("isEndCleaning", false);
 
     }
-
-    public void DisableClean()
-    {
-       
-    }
     private void OnDrawGizmos()
     {
-        Gizmos.DrawWireSphere(cleanPoint.transform.position, radius);
+        if (ExecuteGizmos == true)
+        {
+            Gizmos.DrawWireSphere(cleanPoint.transform.position, radius);
+        }
 
     }
 }
