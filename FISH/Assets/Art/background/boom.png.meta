@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: ac99fcf85e93cd247acbc775f22c1ca9
+guid: b09bebc12e638d7429e57c7592ecb48b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5093889656733064589
-    second: purple fish best_0
+      213: 2503992082558401399
+    second: boom_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: purple fish best_0
+      name: boom_0
       rect:
         serializedVersion: 2
-        x: 173
-        y: 73
-        width: 43
-        height: 43
+        x: 0
+        y: 0
+        width: 200
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 372a365885ede49b0800000000000000
-      internalID: -5093889656733064589
+      spriteID: 77bb8494887ffb220800000000000000
+      internalID: 2503992082558401399
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      purple fish best_0: -5093889656733064589
+      boom_0: 2503992082558401399
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

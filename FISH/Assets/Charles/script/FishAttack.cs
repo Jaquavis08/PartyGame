@@ -17,7 +17,7 @@ public class FishAttack : MonoBehaviour
 
     private void Awake()
     {
-       
+        AttackArea.SetActive(false);
         if (rb2d == null) rb2d = GetComponent<Rigidbody2D>();
     }
 
@@ -52,7 +52,7 @@ public class FishAttack : MonoBehaviour
     public void EndAttack()
     {
         animator.SetBool("isAttacking", false);
-        
+        AttackArea.SetActive(false);
     }
 
     private void OnDrawGizmos()
