@@ -7,5 +7,4 @@ public class GameScore : ScriptableObject
     public int playerScore2;
     public int playerScore3;
     public int playerScore4;
-    public int highestScore;
 }
