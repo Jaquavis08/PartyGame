@@ -7,6 +7,7 @@ public class ScalePickup : MonoBehaviour
     public GameObject scale;
     public GameObject playerscore;
     public float ps;
+    public Rigidbody2D rb2d;
 
     void Start()
     {
@@ -36,8 +37,9 @@ public class ScalePickup : MonoBehaviour
             if (scale != null)
             {
                 Debug.Log("scale colected ");
-                scale.SetActive(false);// Destroy the pickup after collectin
-               // scale.transform.position = new Vector3(hit.x, hit.y, hit.z); // Move it far away to effectively "destroy" it
+                scale.SetActive(false);
+               // Destroy the pickup after collectin
+                scale.transform.position = new Vector3(parent, hit.y, hit.z); // Move it far away to effectively "destroy" it
             }
         }
     }
