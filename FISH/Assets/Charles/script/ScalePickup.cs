@@ -4,9 +4,10 @@ using UnityEngine.Rendering;
 
 public class ScalePickup : MonoBehaviour
 {
-    private GameObject scale;
+    public GameObject scale;
     public GameObject playerscore;
     public float ps;
+    public Rigidbody2D rb2d;
 
     void Start()
     {
@@ -28,7 +29,7 @@ public class ScalePickup : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         Debug.Log("Trigger ");
-        if (other.CompareTag("hit"))
+        if (other.gameObject.CompareTag("hit"))
         {
             
             Debug.Log("found hit ");
@@ -36,8 +37,9 @@ public class ScalePickup : MonoBehaviour
             if (scale != null)
             {
                 Debug.Log("scale colected ");
-                scale.SetActive(false);// Destroy the pickup after collectin
-               // scale.transform.position = new Vector3(hit.x, hit.y, hit.z); // Move it far away to effectively "destroy" it
+                scale.SetActive(false);
+                // Move it back to its original position (example: Vector3.zero or any desired position)
+                scale.transform.position = Vector3.zero;
             }
         }
     }
