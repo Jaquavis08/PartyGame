@@ -42,7 +42,8 @@ public class CleanScript : MonoBehaviour
             {
                 Debug.Log("Pressed");
                 pressed = true;
-                
+                clean();
+
             }
             else if (cleanAction != null && !cleanAction.WasPerformedThisFrame())
             {
@@ -73,14 +74,11 @@ public class CleanScript : MonoBehaviour
 
     public void clean()
     {
-               Collider2D[] cleanee = Physics2D.OverlapCircleAll(cleanPoint.transform.position, radius, cleanees);
+        Collider2D[] cleanee = Physics2D.OverlapCircleAll(cleanPoint.transform.position, radius, cleanees);
+
         foreach (Collider2D cleanGameObject in cleanee)
         {
-            if (cleanGameObject.gameObject.CompareTag("Cleanable"))
-            {
-                Debug.Log("Cleaned");
-                Destroy(cleanGameObject.gameObject);
-            }
+            Debug.Log("Clean");
         }
     }
 

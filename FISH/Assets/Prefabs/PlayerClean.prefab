@@ -164,6 +164,10 @@ MonoBehaviour:
   cleanPoint: {fileID: 6200715158711390332}
   radius: 25
   playerInput: {fileID: 110621998033811636}
+  ExecuteGizmos: 0
+  cleanees:
+    serializedVersion: 2
+    m_Bits: 128
 --- !u!1 &5012959610072726943
 GameObject:
   m_ObjectHideFlags: 0
