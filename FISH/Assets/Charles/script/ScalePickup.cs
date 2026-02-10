@@ -1,4 +1,5 @@
 using JetBrains.Annotations;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Rendering;
 
@@ -6,12 +7,15 @@ public class ScalePickup : MonoBehaviour
 {
     public GameObject scale;
     public GameObject playerscore;
-    public float ps;
-    public Rigidbody2D rb2d;
-
+    public float ps =1 ;
+    public GameObject parent;
+    public GameObject ph;
+    public GameObject player;
     void Start()
     {
-        
+        // UNT0001: The Unity message 'Start' is empty.
+        // You can safely remove this method if you don't need it,
+        // or leave it as is to avoid UNT0001.
     }
 
     void Update()
@@ -29,17 +33,23 @@ public class ScalePickup : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         Debug.Log("Trigger ");
-        if (other.gameObject.CompareTag("hit"))
+        if (other.gameObject.CompareTag("hit") && other.gameObject != ph && other.gameObject != player)
         {
-            
-            Debug.Log("found hit ");
-            ps += 1f; // Increase scale by 1 as an example
-            if (scale != null)
+            if (other.gameObject != ph)
             {
-                Debug.Log("scale colected ");
-                scale.SetActive(false);
-                // Move it back to its original position (example: Vector3.zero or any desired position)
-                scale.transform.position = Vector3.zero;
+                Debug.Log("found hit ");
+                
+                //other.gameObject.GetComponent<Score>().score =+ ps; // Update the score in the Score component
+                if (scale != null)
+                {
+                    Debug.Log("scale colected ");
+                    scale.SetActive(false);
+                    
+                     scale.transform.SetParent(parent != null ? parent.transform : null);
+                    // If you want to access the parent, you can assign it to a variable or use it in logic:
+                     Transform scaleParent = scale.transform.parent;
+                    
+                }
             }
         }
     }
