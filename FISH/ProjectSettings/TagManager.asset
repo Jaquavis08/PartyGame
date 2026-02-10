@@ -11,6 +11,8 @@ TagManager:
   - Fih
   - Undefined
   - hit
+  - scal
+  - scale
   layers:
   - Default
   - TransparentFX
@@ -19,7 +21,7 @@ TagManager:
   - Water
   - UI
   - player
-  - Cleanable
+  - 
   - 
   - 
   - 
