@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 8262400453438296157}
   m_Layer: 6
   m_Name: Image
-  m_TagString: Untagged
+  m_TagString: hit
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -159,7 +159,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee87e77cfc94c0d4faff86ee86a13181, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  radius: 20
+  radius: 30
   rb2d: {fileID: 8590065175244402441}
   parent: {fileID: 5012959610072726943}
   attackPoint: {fileID: 9082054423918194143}
@@ -184,7 +184,7 @@ GameObject:
   - component: {fileID: 1598173007928489203}
   m_Layer: 6
   m_Name: 'Player3 '
-  m_TagString: Untagged
+  m_TagString: hit
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -310,7 +310,7 @@ GameObject:
   - component: {fileID: 6413253632810849955}
   m_Layer: 0
   m_Name: AttackArea
-  m_TagString: Untagged
+  m_TagString: hit
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -325,7 +325,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 0.97542197, z: 1}
+  m_LocalScale: {x: 1, y: 0.68279535, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1937975581732665016}
@@ -446,7 +446,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -6.389694, y: -0.56336975}
+  m_Offset: {x: 3.3300705, y: -4.7482758}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -456,7 +456,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 84.06644, y: 44.610077}
+  m_Size: {x: 103.50597, y: 62.699615}
   m_EdgeRadius: 0
 --- !u!114 &5742543358969894583
 MonoBehaviour:
@@ -482,7 +482,7 @@ GameObject:
   - component: {fileID: 1937975581732665016}
   m_Layer: 6
   m_Name: attackpoint
-  m_TagString: Untagged
+  m_TagString: hit
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -496,8 +496,8 @@ Transform:
   m_GameObject: {fileID: 9082054423918194143}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.438, y: 0.047, z: 0}
-  m_LocalScale: {x: 0.022138588, y: 0.8797587, z: 0.022138588}
+  m_LocalPosition: {x: -1.824, y: 0.04, z: 0}
+  m_LocalScale: {x: 1.0550001, y: 2.1472983, z: 0.022138588}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 714737729709759003}
@@ -573,11 +573,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5735597009910604592, guid: f27ba6f97d4416b4397a99cfe4f366c8, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -70.4
+      value: -88.1
       objectReference: {fileID: 0}
     - target: {fileID: 5735597009910604592, guid: f27ba6f97d4416b4397a99cfe4f366c8, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 2.7
+      value: 3.1
       objectReference: {fileID: 0}
     - target: {fileID: 5735597009910604592, guid: f27ba6f97d4416b4397a99cfe4f366c8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

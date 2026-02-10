@@ -4,7 +4,7 @@ using UnityEngine.Rendering;
 
 public class ScalePickup : MonoBehaviour
 {
-    private GameObject scale;
+    public GameObject scale;
     public GameObject playerscore;
     public float ps;
 
@@ -28,7 +28,7 @@ public class ScalePickup : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         Debug.Log("Trigger ");
-        if (other.CompareTag("hit"))
+        if (other.gameObject.CompareTag("hit"))
         {
             
             Debug.Log("found hit ");
