@@ -34,17 +34,18 @@ public class ScaleDrop : MonoBehaviour
 
     public IEnumerator DropedScale()
     {
-        if (sca != null)
-        {
-            sca.SetActive(true);
-            Debug.Log("Scale dropped and active");
-            rb2d.constraints = RigidbodyConstraints2D.FreezePosition;
-            Debug.Log("Rigidbody2D constraints set to FreezeAll");
-            yield return new WaitForSeconds(10f);
-            Debug.Log("10 seconds passed, hiding scale and unfreezing Rigidbody2D");    
-            sca.SetActive(false);
+        
+        
+        sca.SetActive(true);
+        Debug.Log("Scale dropped and active");
+        rb2d.constraints = RigidbodyConstraints2D.FreezePosition;
+        Debug.Log("Rigidbody2D constraints set to FreezeAll");
+        
+        yield return new WaitForSeconds(1f);
+        Debug.Log("10 seconds passed, hiding scale and unfreezing Rigidbody2D");    
+        sca.SetActive(false);
 
-            rb2d.constraints = RigidbodyConstraints2D.None;
-        }
+        rb2d.constraints = RigidbodyConstraints2D.None;
+        
     }
 }

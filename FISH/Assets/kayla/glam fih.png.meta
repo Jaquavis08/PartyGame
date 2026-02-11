@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 4a55fcc27084b6c43bd1d1e37a4c905b
+guid: b98391c8ec55d28469cfc23dc5985812
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5442138090818477696
-    second: background layer1_0
+      213: 3224848980267876825
+    second: glam fih_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: background layer1_0
+      name: glam fih_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 220
-        height: 120
+        y: 16
+        width: 128
+        height: 107
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 08e9bd982cb568b40800000000000000
-      internalID: 5442138090818477696
+      spriteID: 9d1c523cf07f0cc20800000000000000
+      internalID: 3224848980267876825
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      background layer1_0: 5442138090818477696
+      glam fih_0: 3224848980267876825
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

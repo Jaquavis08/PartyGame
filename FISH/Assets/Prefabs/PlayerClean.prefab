@@ -162,8 +162,13 @@ MonoBehaviour:
   anim: {fileID: 2906331819726277113}
   parent: {fileID: 5012959610072726943}
   cleanPoint: {fileID: 6200715158711390332}
-  radius: 25
+  radius: 11
   playerInput: {fileID: 110621998033811636}
+  ExecuteGizmos: 0
+  damage: 1
+  cleanees:
+    serializedVersion: 2
+    m_Bits: 128
 --- !u!1 &5012959610072726943
 GameObject:
   m_ObjectHideFlags: 0
@@ -323,6 +328,6 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.029, y: 0.93}
+  m_AnchoredPosition: {x: -0.018, y: 1.024}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
