@@ -1,6 +1,6 @@
 using UnityEngine;
 using System.Collections;
-using UnityEngine.UIElements;
+using UnityEngine.UI;
 
 public class DirtHealthScript : MonoBehaviour
 {
@@ -9,13 +9,15 @@ public class DirtHealthScript : MonoBehaviour
     
     public GameObject dirt;
    
-    public ParticleSystem particles;
+    public GameObject particles;
+
+    public GameObject dirtyFish;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
     { 
         currentHealth = health;
-        particles = gameObject.GetComponentInChildren<ParticleSystem>();
+        
     }
 
     // Update is called once per frame
@@ -29,17 +31,21 @@ public class DirtHealthScript : MonoBehaviour
         }
         if (health <= 0)
         {
-            StartCoroutine("Death");
+            StartCoroutine("Wait");
         }
     }
-    private IEnumerator Death()
+    private IEnumerator Wait()
     {
-        particles.Play();
-        particles.transform.parent = null;
-        dirt.GetComponent<Image>().sprite = null;
-        yield return new WaitForSeconds(2f);
-        particles.Stop();
-        Destroy(particles);
+        gameObject.GetComponentInChildren<ParticleSystem>().Play();
+        particles.transform.SetParent(dirtyFish.transform);
+        gameObject.GetComponent<Image>().enabled = false;
+        yield return new WaitForSeconds(0.01f);
+        gameObject.GetComponentInChildren<ParticleSystem>().Stop();
+        if (!gameObject.GetComponentInChildren<ParticleSystem>().isPlaying)
+        {
+            Destroy(dirt);
+        }
+
     }
     
 }
