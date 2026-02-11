@@ -14,9 +14,10 @@ public class FishAttack : MonoBehaviour
     public PlayerInput playerInput;
     [SerializeField] private Animator animator;
     public GameObject AttackArea;
-
+    
     private void Awake()
     {
+        
         AttackArea.SetActive(false);
         if (rb2d == null) rb2d = GetComponent<Rigidbody2D>();
     }
@@ -30,6 +31,7 @@ public class FishAttack : MonoBehaviour
         {
             Debug.Log("Hit Player");
             AttackArea.SetActive(true);
+           
         } 
 
     }

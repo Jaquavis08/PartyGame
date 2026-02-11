@@ -7,55 +7,43 @@ public class ScalePickup : MonoBehaviour
 {
     public GameObject scale;
     private GameObject pointStuff;
-    public float ps =1 ;
+    public float ps;
     public GameObject parent;
-    public GameObject ph;
+    public GameObject hitbox;
     public GameObject player;
     
    
-    void start()
+    void Start()
     {
         pointStuff = GameObject.Find("pointStuff");
-        
+        hitbox = GameObject.Find("hitbox");
+        player = GameObject.Find("Player");
+        parent = GameObject.Find("parent");
     }
     void Update()
     {
-          //  if (playerscore != null)
-            //{
-              //  var scoreComponent = playerscore.GetComponent<Score>();
-                //if (scoreComponent != null)
-                //{
-                 //   ps = scoreComponent.score; // Update ps with the current score
-               // }
-      //  }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         Debug.Log("Trigger ");
-        if (other.gameObject.CompareTag("hit") && other.gameObject != ph && other.gameObject != player)
-        {
-            if (other.gameObject != ph)
-            {
-                Debug.Log("found hit ");
+        Debug.Log("found hit ");
 
-                CollectScale(other);
-            }
-        }
+        CollectScale(other);
     }
     
     public void CollectScale(Collider2D other)
     {
-        //other.gameObject.GetComponent<Score>().score =+ ps; // Update the score in the Score component
-        if (other.gameObject != ph && other.gameObject != player)
+        // Ignore collisions from the parent object or any of its children.
+        if (parent != null)
         {
-            Debug.Log("scale colected ");
-            scale.SetActive(false);
-
-            scale.transform.SetParent(parent != null ? parent.transform : null);
-            // If you want to access the parent, you can assign it to a variable or use it in logic:
-            Transform scaleParent = scale.transform.parent;
-
+            
+             if (other.transform.root.gameObject == parent) return;
         }
+        if (scale.activeSelf == true)
+            ps += 1;
+        Debug.Log("scale collected ");
+        scale.SetActive(false);
+        scale.transform.position = parent.transform.position;
     }
 }
