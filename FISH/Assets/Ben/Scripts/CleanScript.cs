@@ -18,11 +18,6 @@ public class CleanScript : MonoBehaviour
     public LayerMask cleanees;
 
     // Update is called once per frame
-
-    private void FixedUpdate()
-    {
-        
-    }
     void Update()
     {
         var startCleanAction = playerInput.actions["Interact"];
@@ -38,16 +33,18 @@ public class CleanScript : MonoBehaviour
         if (started)
         {
             ExecuteGizmos = true;
+
             if (cleanAction != null && cleanAction.WasPerformedThisFrame() && !pressed)
             {
                 Debug.Log("Pressed");
                 pressed = true;
-                clean();
+                Clean();
 
             }
             else if (cleanAction != null && !cleanAction.WasPerformedThisFrame())
             {
                 pressed = false;
+               
             }
 
             if (anim.GetBool("isCleaning") && startCleanAction.WasPerformedThisFrame())
@@ -72,27 +69,24 @@ public class CleanScript : MonoBehaviour
         anim.SetBool("isCleaning", true);
     }
 
-    public void clean()
+    public void Clean()
     {
         Collider2D[] cleanee = Physics2D.OverlapCircleAll(cleanPoint.transform.position, radius, cleanees);
 
         foreach (Collider2D cleanGameObject in cleanee)
         {
             Debug.Log("Clean");
+            
         }
     }
 
     public void EndClean()
     {
         anim.SetBool("isEndCleaning", false);
-
     }
-    private void OnDrawGizmos()
-    {
-        if (ExecuteGizmos == true)
-        {
-            Gizmos.DrawWireSphere(cleanPoint.transform.position, radius);
-        }
 
+    private void OnDrawGizmos()
+    {  
+            Gizmos.DrawWireSphere(cleanPoint.transform.position, radius);
     }
 }
