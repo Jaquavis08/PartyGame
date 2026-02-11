@@ -14,6 +14,7 @@ public class CleanScript : MonoBehaviour
     public float radius;
     public PlayerInput playerInput;
     public bool ExecuteGizmos;
+    public float damage;
 
     public LayerMask cleanees;
 
@@ -24,7 +25,7 @@ public class CleanScript : MonoBehaviour
         var cleanAction = playerInput.actions["Clean"];
         var TDmovement = GetComponentInParent<TDMovement>();
 
-        if (startCleanAction != null && startCleanAction.WasPerformedThisFrame())
+        if (startCleanAction != null && startCleanAction.WasPerformedThisFrame()) //Checks to see if the player pressed the StartClean button(E on Keyboard or Button East on controller)
         {
             anim.SetBool("isStartCleaning", true);
             started = true;
@@ -61,7 +62,6 @@ public class CleanScript : MonoBehaviour
         }
     }
 
-    
     public void StartClean()
     {
         
@@ -76,7 +76,7 @@ public class CleanScript : MonoBehaviour
         foreach (Collider2D cleanGameObject in cleanee)
         {
             Debug.Log("Clean");
-            
+            cleanGameObject.GetComponent<DirtHealthScript>().health -= damage;
         }
     }
 
