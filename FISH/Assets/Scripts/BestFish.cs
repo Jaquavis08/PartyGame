@@ -12,6 +12,11 @@ public class BestFish : MonoBehaviour
         GetScore();
     }
 
+    public void Update()
+    {
+        GetScore();
+    }
+
     void GetScore()
     {
         if (Score == null)
@@ -23,7 +28,7 @@ public class BestFish : MonoBehaviour
         int bestScore = int.MinValue;
         int bestPlayer = -1;
 
-        foreach (PlayerJoin player in FindObjectsOfType<PlayerJoin>())
+        foreach (PlayerJoin player in FindObjectsByType<PlayerJoin>(FindObjectsInactive.Include, FindObjectsSortMode.None))
         {
             int playerScore;
             switch (player.playerNumber)
@@ -64,7 +69,7 @@ public class BestFish : MonoBehaviour
 
     void DisplayFishyyy(int playerNumber)
     {
-
+        print(playerNumber);
         BestFishyyy.ForEach(fish => fish.SetActive(false));
 
         switch (playerNumber - 1)
