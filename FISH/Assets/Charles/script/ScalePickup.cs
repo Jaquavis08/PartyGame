@@ -6,18 +6,18 @@ using UnityEngine.Rendering;
 public class ScalePickup : MonoBehaviour
 {
     public GameObject scale;
-    public GameObject playerscore;
+    private GameObject pointStuff;
     public float ps =1 ;
     public GameObject parent;
     public GameObject ph;
     public GameObject player;
-    void Start()
+    
+   
+    void start()
     {
-        // UNT0001: The Unity message 'Start' is empty.
-        // You can safely remove this method if you don't need it,
-        // or leave it as is to avoid UNT0001.
+        pointStuff = GameObject.Find("pointStuff");
+        
     }
-
     void Update()
     {
           //  if (playerscore != null)
@@ -38,19 +38,24 @@ public class ScalePickup : MonoBehaviour
             if (other.gameObject != ph)
             {
                 Debug.Log("found hit ");
-                
-                //other.gameObject.GetComponent<Score>().score =+ ps; // Update the score in the Score component
-                if (scale != null)
-                {
-                    Debug.Log("scale colected ");
-                    scale.SetActive(false);
-                    
-                     scale.transform.SetParent(parent != null ? parent.transform : null);
-                    // If you want to access the parent, you can assign it to a variable or use it in logic:
-                     Transform scaleParent = scale.transform.parent;
-                    
-                }
+
+                CollectScale(other);
             }
+        }
+    }
+    
+    public void CollectScale(Collider2D other)
+    {
+        //other.gameObject.GetComponent<Score>().score =+ ps; // Update the score in the Score component
+        if (other.gameObject != ph && other.gameObject != player)
+        {
+            Debug.Log("scale colected ");
+            scale.SetActive(false);
+
+            scale.transform.SetParent(parent != null ? parent.transform : null);
+            // If you want to access the parent, you can assign it to a variable or use it in logic:
+            Transform scaleParent = scale.transform.parent;
+
         }
     }
 }
