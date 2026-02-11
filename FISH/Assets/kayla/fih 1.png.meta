@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: f27ae6b16ae8b974bad0feee28f80566
+guid: 7ff87da4c9d881d4790d40a6956f799f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7754988575891523622
-    second: timer_0
+      213: -8975379133966766322
+    second: fih 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: timer_0
+      name: fih 1_0
       rect:
         serializedVersion: 2
-        x: 173
-        y: 96
-        width: 43
-        height: 24
+        x: 0
+        y: 8
+        width: 32
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ad7f5c85afeb06490800000000000000
-      internalID: -7754988575891523622
+      spriteID: e0f25733b3c017380800000000000000
+      internalID: -8975379133966766322
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      timer_0: -7754988575891523622
+      fih 1_0: -8975379133966766322
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
