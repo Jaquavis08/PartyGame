@@ -23,7 +23,7 @@ public class FihListt : MonoBehaviour
         switch (list.Count)
         {
             case 1:
-                PointSystem.playerScore1 == BestFish;
+                
                 break;
             case 2:
                 list[0].SetActive(true);

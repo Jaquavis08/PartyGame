@@ -4,6 +4,7 @@ using UnityEngine;
 public class BestFish : MonoBehaviour
 {
     public GameScore Score;
+    public List<GameObject> BestFishyyy;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -48,6 +49,7 @@ public class BestFish : MonoBehaviour
                 bestScore = playerScore;
                 bestPlayer = player.playerNumber;
             }
+            DisplayFishyyy(bestPlayer);
         }
 
         if (bestPlayer != -1)
@@ -57,6 +59,28 @@ public class BestFish : MonoBehaviour
         else
         {
             Debug.Log("No players found to evaluate scores.");
+        }
+    }
+
+    void DisplayFishyyy(int playerNumber)
+    {
+
+        BestFishyyy.ForEach(fish => fish.SetActive(false));
+
+        switch (playerNumber - 1)
+        {
+            case 0: 
+                BestFishyyy[0].SetActive(true);
+                break;
+            case 1:
+                BestFishyyy[1].SetActive(true);
+                break;
+            case 2:
+                BestFishyyy[2].SetActive(true);
+                break;
+            case 3:
+                BestFishyyy[3].SetActive(true);
+                break;
         }
     }
 }
