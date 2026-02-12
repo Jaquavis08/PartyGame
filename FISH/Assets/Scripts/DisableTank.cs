@@ -10,6 +10,7 @@ public class DisableTank : MonoBehaviour
         tank = GetComponent<Image>();
         tank.enabled = false;
         
+        gameObject.SetActive(false);
     }
 
     // Update is called once per frame

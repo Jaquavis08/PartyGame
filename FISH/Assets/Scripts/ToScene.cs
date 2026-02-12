@@ -23,8 +23,8 @@ public class ToScene : MonoBehaviour
 
     void Start()
     {
-        button1 = transform.Find("Exit").GetComponent<Button>();
-        button1.onClick.AddListener(() =>
+        button1 = transform.Find("Exit")?.GetComponent<Button>();
+        button1?.onClick.AddListener(() =>
         {
             Quit1();
         });
