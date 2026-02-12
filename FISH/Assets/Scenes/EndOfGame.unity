@@ -307,7 +307,7 @@ RectTransform:
   - {fileID: 662076795}
   - {fileID: 1610036418}
   - {fileID: 952614311}
-  m_Father: {fileID: 1076097444}
+  m_Father: {fileID: 1149963707}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1076,7 +1076,6 @@ RectTransform:
   m_Children:
   - {fileID: 2004261072}
   - {fileID: 843259284}
-  - {fileID: 176062080}
   - {fileID: 1003915919}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1375,6 +1374,9 @@ PrefabInstance:
     - {fileID: 2491218760706565097, guid: 9d7637f77fed9f043ab5b387dd026b7e, type: 3}
     - {fileID: 6492063346908221804, guid: 9d7637f77fed9f043ab5b387dd026b7e, type: 3}
     m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 5087955555705596147, guid: 9d7637f77fed9f043ab5b387dd026b7e, type: 3}
+      insertIndex: 6
+      addedObject: {fileID: 176062080}
     - targetCorrespondingSourceObject: {fileID: 5087955555705596147, guid: 9d7637f77fed9f043ab5b387dd026b7e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 393012576}
