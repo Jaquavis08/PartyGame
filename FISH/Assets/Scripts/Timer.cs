@@ -5,7 +5,6 @@ public class Timer : MonoBehaviour
 {
     public Slider timerSlider;
     public float gameTime;
-    public Animator zoomOut;
     public Image tankShelf;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -23,7 +22,6 @@ public class Timer : MonoBehaviour
         {
             Debug.Log("Time's up!");
             tankShelf.enabled = true;
-            zoomOut.SetTrigger("out");
 
         }
         else
