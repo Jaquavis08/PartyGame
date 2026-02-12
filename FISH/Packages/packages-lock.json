@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "com.coffee.ui-particle": {
-      "version": "file:C:/Users/Benjamin/Downloads/ParticleEffectForUGUI-main/ParticleEffectForUGUI-main",
+      "version": "file:C:/Users/1720941/OneDrive - Mukilteo School District/Documents/ParticleEffectForUGUI-main/ParticleEffectForUGUI-main",
       "depth": 0,
       "source": "local",
       "dependencies": {
